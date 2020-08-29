@@ -1,16 +1,33 @@
 package org.matsim.contrib.protobuf;
 
-import org.matsim.api.core.v01.BasicLocation;
-import org.matsim.api.core.v01.Id;
-import org.matsim.api.core.v01.events.*;
-import org.matsim.core.events.algorithms.EventWriter;
-import org.matsim.core.events.handler.BasicEventHandler;
-import org.matsim.core.utils.pb.*;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UncheckedIOException;
 import java.util.Map;
+
+import org.matsim.api.core.v01.BasicLocation;
+import org.matsim.api.core.v01.Id;
+import org.matsim.api.core.v01.events.ActivityEndEvent;
+import org.matsim.api.core.v01.events.ActivityStartEvent;
+import org.matsim.api.core.v01.events.Event;
+import org.matsim.api.core.v01.events.LinkEnterEvent;
+import org.matsim.api.core.v01.events.LinkLeaveEvent;
+import org.matsim.api.core.v01.events.PersonArrivalEvent;
+import org.matsim.api.core.v01.events.PersonDepartureEvent;
+import org.matsim.api.core.v01.events.PersonEntersVehicleEvent;
+import org.matsim.api.core.v01.events.PersonLeavesVehicleEvent;
+import org.matsim.api.core.v01.events.PersonMoneyEvent;
+import org.matsim.api.core.v01.events.PersonStuckEvent;
+import org.matsim.api.core.v01.events.TransitDriverStartsEvent;
+import org.matsim.api.core.v01.events.VehicleAbortsEvent;
+import org.matsim.api.core.v01.events.VehicleEntersTrafficEvent;
+import org.matsim.api.core.v01.events.VehicleLeavesTrafficEvent;
+import org.matsim.core.events.algorithms.EventWriter;
+import org.matsim.core.events.handler.BasicEventHandler;
+import org.matsim.core.utils.pb.ContentType;
+import org.matsim.core.utils.pb.PBFileHeader;
+import org.matsim.core.utils.pb.ProtoEvents;
+import org.matsim.core.utils.pb.ProtoId;
 
 /**
  * Event writer for protobuf format according to {@link org.matsim.core.utils.pb.Wireformat}

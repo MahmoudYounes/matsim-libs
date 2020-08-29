@@ -182,7 +182,8 @@ public abstract class MatsimXmlParser extends DefaultHandler implements MatsimRe
 			factory.setNamespaceAware(this.isNamespaceAware);
 			if (this.isValidating) {
 				// enable optional support for XML Schemas
-				factory.setFeature("http://apache.org/xml/features/validation/schema", true);
+				factory.setFeature(""
+						+ "http://apache.org/xml/features/validation/schema", true);
 				SAXParser parser = factory.newSAXParser();
 				XMLReader reader = parser.getXMLReader();
 				reader.setContentHandler(this);

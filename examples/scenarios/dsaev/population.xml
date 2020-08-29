@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE population SYSTEM "http://www.matsim.org/files/dtd/population_v5.dtd">
+
+<population>
+
+	<!-- ====================================================================== -->
+
+	<person id="r1" employed="no">
+		<plan selected="yes">
+			<act type="source" x="200" y="-400"/>
+			<leg mode="car"/>
+            <act type="destination" x="200" y="-200"/>
+		</plan>
+	</person>
+
+	<person id="r2" employed="no">
+		<plan selected="yes">
+			<act type="source" x="0" y="-200"/>
+			<leg mode="car"/>
+            <act type="destination" x="-200" y="-200"/>
+		</plan>
+	</person>
+
+	<person id="r3" employed="no">
+		<plan selected="yes">
+			<act type="source" x="-200" y="-400"/>
+			<leg mode="car"/>
+            <act type="destination" x="400" y="-400"/>
+		</plan>
+	</person>
+
+	<person id="r4" employed="no">
+		<plan selected="yes">
+			<act type="source" x="0" y="-400"/>
+			<leg mode="car"/>
+            <act type="destination" x="-400" y="0"/>
+		</plan>
+	</person>
+
+	<person id="r5" employed="no">
+		<plan selected="yes">
+			<act type="source" x="200" y="-200"/>
+			<leg mode="car"/>
+			<act type="destination" x="800" y="-200"/>
+		</plan>
+	</person>
+
+	<person id="r6" employed="no">
+		<plan selected="yes">
+			<act type="source" x="-200" y="-200"/>
+			<leg mode="car"/>
+			<act type="destination" x="400" y="0"/>
+		</plan>
+	</person>
+
+	<person id="r7" employed="no">
+		<plan selected="yes">
+			<act type="source" x="600" y="-200"/>
+			<leg mode="car"/>
+			<act type="destination" x="800" y="-400"/>
+		</plan>
+	</person>
+
+	<person id="r8" employed="no">
+		<plan selected="yes">
+			<act type="source" x="1000" y="-200"/>
+			<leg mode="car"/>
+			<act type="destination" x="400" y="-800"/>
+		</plan>
+	</person>
+
+	<person id="r9" employed="no">
+		<plan selected="yes">
+			<act type="source" x="1000" y="-600"/>
+			<leg mode="car"/>
+			<act type="destination" x="-1000" y="-600"/>
+		</plan>
+	</person>
+
+	<person id="r10" employed="no">
+		<plan selected="yes">
+			<act type="source" x="-1000" y="-200"/>
+			<leg mode="car"/>
+			<act type="destination" x="1000" y="-600"/>
+		</plan>
+	</person>
+
+    <person id="r11" employed="no">
+		<plan selected="yes">
+			<act type="source" x="1000" y="-400"/>
+			<leg mode="car"/>
+			<act type="destination" x="200" y="-400"/>
+		</plan>
+	</person>
+
+    <person id="r12" employed="no">
+		<plan selected="yes">
+			<act type="source" x="800" y="-600"/>
+			<leg mode="car"/>
+			<act type="destination" x="200" y="-400"/>
+		</plan>
+	</person>
+
+	<!-- ====================================================================== -->
+
+</population>
